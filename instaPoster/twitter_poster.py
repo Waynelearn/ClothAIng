@@ -1,6 +1,6 @@
 import tweepy
 
-def post_tweet(tweet):
+def post_tweet(tweet, image_path):
 
     twitter_auth_keys = {
         "consumer_key"        : "MuB83Cu0HN2qWhExgBtIVhc6s",
@@ -21,7 +21,9 @@ def post_tweet(tweet):
 
     api = tweepy.API(auth)
 
-    status = api.update_status(status=tweet)
+    media = api.media_upload(image_path)
+
+    status = api.update_status(status=tweet, media_ids=[media.media_id])
 
 
 if __name__ == "__main__":

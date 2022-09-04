@@ -1,7 +1,7 @@
 import requests
 import base64
 
-def generate_img(text, num_images=3):
+def generate_img(text, num_images=1):
 
     URL = "https://oliver-hewlett-motors-fold.trycloudflare.com/dalle"
 

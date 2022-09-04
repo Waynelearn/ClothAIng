@@ -27,6 +27,7 @@ numpy = "*"
 torch = "*"
 torchvision = "*"
 torchaudio = "*"
+fastai = "*"
 
 [dev-packages]
 
