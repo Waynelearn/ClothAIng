@@ -3,7 +3,7 @@ import base64
 
 def generate_img(text, num_images=1):
 
-    URL = "https://oliver-hewlett-motors-fold.trycloudflare.com/dalle"
+    URL = "https://dare-minutes-spots-lifestyle.trycloudflare.com//dalle"
 
     data = {"text": text, "num_images": num_images}
 

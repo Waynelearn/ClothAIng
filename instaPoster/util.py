@@ -2,7 +2,7 @@ from collections import Counter
 
 def get_top():
 
-    with open('model/output.txt') as f:
+    with open('output.txt') as f:
         lines = f.readlines()
 
     counts = Counter(lines)

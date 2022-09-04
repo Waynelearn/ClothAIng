@@ -22,7 +22,7 @@ def search_insta(hashtag):
     for i, img in enumerate(img_list):
         image_url = img.get_attribute("src")
         r = requests.get(image_url, stream = True)
-        filename = f'pictures/original/image_{i}.jpeg'
+        filename = f'instaPoster/pictures/original/image_{i}.jpeg'
         if r.status_code == 200:
         # Set decode_content value to True, otherwise the downloaded image file's size will be zero.
             r.raw.decode_content = True
